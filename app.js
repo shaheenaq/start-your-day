@@ -32,7 +32,7 @@ const handleClick = (e) => {
 
 	let userZipcode = document.getElementById('zipcode').value;
 	let weatherData;
-		const urlW = `http://api.openweathermap.org/data/2.5/weather?zip=${userZipcode},us&units=imperial&appid=e609adc51cd1d7c976b4c68b8e4e1962`;
+		const urlW = `https://api.openweathermap.org/data/2.5/weather?zip=${userZipcode},us&units=imperial&appid=e609adc51cd1d7c976b4c68b8e4e1962`;
 		fetch(urlW)
 			.then(response => response.json())
 			.then(data2 => {
