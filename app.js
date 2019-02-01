@@ -45,7 +45,7 @@ const handleClick = (e) => {
 				para2.innerHTML = `${weatherData.main.temp}&#8457 : ${weatherData.weather[0].description}`;
 				document.getElementById('weather').appendChild(para2);
 				let image1 = document.createElement('img');
-				image1.setAttribute('src','http://openweathermap.org/img/w/'+weatherData.weather[0].icon+'.png');
+				image1.setAttribute('src','https://openweathermap.org/img/w/'+weatherData.weather[0].icon+'.png');
 				document.getElementById('weather').appendChild(image1);
 			
 		});
